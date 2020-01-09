@@ -6,6 +6,7 @@ public class ClientInformation {
     private String sessionId;
     private String hostName;
     private String canonicalHostName;
+    private String servletRequestInstance;
 
 
     public String getIp() {
@@ -38,5 +39,13 @@ public class ClientInformation {
 
     public void setHostName(String hostName) {
         this.hostName = hostName;
+    }
+
+    public String getServletRequestInstance() {
+        return servletRequestInstance;
+    }
+
+    public void setServletRequestInstance(String servletRequestInstance) {
+        this.servletRequestInstance = servletRequestInstance;
     }
 }

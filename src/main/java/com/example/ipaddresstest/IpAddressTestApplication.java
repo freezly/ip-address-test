@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IpAddressTestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(IpAdressTestApplication.class, args);
+        SpringApplication.run(IpAddressTestApplication.class, args);
     }
 
     @GetMapping("ip")
@@ -24,6 +24,7 @@ public class IpAddressTestApplication {
         ClientInformation ci = new ClientInformation();
         ci.setIp(servletRequest.getRemoteAddr());
         ci.setSessionId(servletRequest.getSession().getId());
+        ci.setServletRequestInstance(servletRequest.toString());
 
         InetAddress ia = Inet4Address.getByName(servletRequest.getRemoteAddr());
         ci.setHostName(ia.getHostName());
