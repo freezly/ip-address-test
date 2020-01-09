@@ -1,4 +1,4 @@
-package com.example.ipadresstest;
+package com.example.ipaddresstest;
 
 public class ClientInformation {
 

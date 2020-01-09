@@ -1,20 +1,19 @@
-package com.example.ipadresstest;
+package com.example.ipaddresstest;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 @SpringBootApplication
 @RestController
-public class IpAdressTestApplication {
+public class IpAddressTestApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(IpAdressTestApplication.class, args);
